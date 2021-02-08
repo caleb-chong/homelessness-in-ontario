@@ -1,0 +1,505 @@
+/*Body Styling*/
+body
+{
+    background-color: azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+}
+
+button
+{
+    cursor: pointer;
+}
+
+/* Dark Mode */
+.darkMode
+{
+    background-color: rgb(32,32,32);
+    color: rgb(255,255,255);
+}
+
+/* Horizontal Navigation Bar */
+.topnav
+{
+    overflow: hidden;
+    background-color: rgb(67, 67, 67);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.topnav a
+{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover
+{
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Header Styling */
+.pageHeader
+{
+    font-size: 50px;
+    padding: 20px;
+    padding-top: 150px;
+    padding-bottom: 160px;
+    text-align: center;
+    background-image: url("homelessHeader.jpg");
+    background-size: cover;
+}
+
+/* Images (On The Right) Styling */
+.topicImage
+{
+    width: 40%;
+    display: block;
+    float: right;
+}
+
+/* Subheading Styling */
+.topicHeader
+{
+    width: 55%;
+    font-size: 30px;
+}
+
+/* Text Styling (Text Columns On Left) */
+.topicText
+{
+    width: 55%;
+}
+
+/* Infographic Styling */
+#infographic
+{
+    margin-top: 20px;
+}
+
+/* YouTube Videos */
+.youtube
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Slideshow General Styling */
+.slideshowContainer
+{
+    max-width: 43%;
+    position: relative;
+    float: right;
+    box-sizing: border-box;
+}
+
+/* Hide images automatically */
+.mySlides
+{
+    display: none;
+}
+
+/* Buttons to move to next/previous slides */
+.prev, .next
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* "Next" button positioning */
+.next
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Darken background of "next" and "previous" butons when hovered over */
+.prev:hover, .next:hover
+{
+    background-color: grey
+}
+
+/* Caption Styling */
+.caption
+{
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Slide Number Text Styling */
+.numberText
+{
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Dot Slide Indicators */
+.dot
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6 ease;
+}
+
+/* Dots; Change Background Colour */
+.active, .dot:hover
+{
+    background-color: #717171;
+}
+
+/* Fade animation */
+.fade
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade
+{
+    from
+    {
+        opacity: .4
+    }
+    to
+    {
+        opacity:1
+    }
+}
+
+@keyframes fade
+{
+    from
+    {
+        opacity: 4
+    }
+    to
+    {
+        opacity: 1
+    }
+}
+
+/* Slideshow Image Styling */
+.slideshowImage
+{
+    width: 100%;
+}
+
+/* Dot Indicators Styling */
+.dotsCircles
+{
+    text-align: center;
+}
+
+/* Flip Box General Styling */
+.flipBox
+{
+    background-color: transparent;
+    width: 43%;
+    height: 445.5px;
+    margin-bottom: 20px;
+    z-index: -1;
+    float: right;
+}
+
+/*Inner Flip Box Styling*/
+.flipBoxInner
+{
+    width: 100%;
+    height:100%;
+    text-align: left;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+}
+
+/*Horizontal Flip During Hover (Flip Box)*/
+.flipBox:hover .flipBoxInner
+{
+    transform: rotateY(180deg);
+}
+
+/* Positioning Front and Back of Flip Box */
+.flipBoxFront, .flipBoxBack
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Flip Box Front Styling */
+.flipBoxFront
+{
+    background-color: rgb(228, 228, 228);
+    color:black;
+    border: 1px solid grey;
+}
+
+/*Flip Box Back Styling */
+.flipBoxBack
+{
+    background-color: rgb(228, 228, 228);
+    border: 1px solid grey;
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+/* Image Preview for Roehampton Hotel */
+.roehamptonImage
+{
+    width: 100%;
+    height: 75%;
+    text-align: center;
+    object-fit: cover;
+}
+
+/* Preview for Roehampton Article */
+.articleText
+{
+    margin-top: 10px;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+/* Roehampton Image Preview (Back) Styling */
+.roehamptonBack
+{
+    width: 100%;
+}
+
+/* Roehampton Button Styling */
+.roehamptonBtn
+{
+    background-color: rgb(254, 40, 40);
+    border: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Collapsibles Section Styling */
+.allCollapsibles
+{
+    background-color:rgb(213, 213, 213);
+    padding-top: 20px;
+    padding-bottom: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Collapsibles Section Header Styling */
+.collapsibleHeader
+{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+/* Style Collapsible Text (Whole Element) */
+.collapsible
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style Collapsible Button */
+.collapsibleBtn
+{
+    background-color: rgb(156, 156, 156);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Style Collapsible Button on Hover */
+.active, .collapsibleBtn:hover
+{
+    background-color: rgb(148, 148, 148);
+}
+
+/* Style Collapsible (Hidden) Content */
+.collapsibleText
+{
+    padding: 18px;
+    display: none;
+    overflow: hidden;
+    background-color: rgb(225, 225, 225);
+}
+
+.conclusion
+{
+    border: 1px solid black;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 90px;
+}
+
+/* Share Section Styling */
+.shareBar
+{
+    background-color: rgb(213, 213, 213);
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Style Buttons on Share Bar */
+#shareBarBtn
+{
+    background-color: transparent;
+    border: solid 1px black;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+
+}
+
+/* "Share" Caption on Share Bar */
+.shareText
+{
+    display: inline;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.share
+{
+    float: right;
+    margin-right: 20px;
+}
+
+/* Button Styling */
+.fa
+{
+    padding: 15px;
+    font-size: 22.5px;
+    width: 23px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-bottom: 3px;
+}
+
+/* Button Hover Styling */
+.fa:hover
+{
+    opacity: 0.7;
+}
+
+/* FaceBook Button */
+.fa-facebook
+{
+    background: #3B5998;
+    color: white;
+}
+
+/* Google/Gmail Button */
+.fa-google
+{
+    background: #dd4b39;
+    color: white;
+}
+
+/* Twitter Button */
+.fa-twitter
+{
+    background: #55ACEE;
+    color: white;
+}
+
+/* Reddit Button */
+.fa-reddit
+{
+    background: #ff5700;
+    color: white;
+}
+
+/* Pinterest Button */
+.fa-pinterest
+{
+    background: #cb2027;
+    color: white;
+}
+
+/* Scroll Indicator Styling */
+.header
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+/* Scroll Indicator Styling #2 */
+.progressBar
+{
+    height: 8px;
+    background: rgb(40,71,164);
+    width: 0%;
+}
+
+.lastSource
+{
+    margin-bottom: 90px;
+}
