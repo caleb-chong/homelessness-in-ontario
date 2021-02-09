@@ -1,3 +1,4 @@
+// Scroll Indicator
 window.onscroll = function() {scrollIndicator()};
 
 function scrollIndicator()
